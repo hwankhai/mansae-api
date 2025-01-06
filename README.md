@@ -4,8 +4,18 @@
 
 ## 설치
 
+다음 두 가지 방법 중 하나로 설치할 수 있습니다:
+
+1. GitHub에서 직접 설치:
 ```bash
-pip install mansae-api
+pip install git+https://github.com/hwankhai/mansae-api.git
+```
+
+2. 소스코드에서 직접 설치:
+```bash
+git clone https://github.com/hwankhai/mansae-api.git
+cd mansae-api
+pip install -e .
 ```
 
 ## 사용법
@@ -47,6 +57,12 @@ print(f"시주: {saju['hour']['ganji']} ({saju['hour']['hganji']})")
 }
 ```
 
+## 요구사항
+
+- Python >= 3.7
+- NumPy >= 1.21.0
+- Windows 사용자의 경우 tzdata 패키지가 자동으로 설치됩니다.
+
 ## 라이선스
 
 이 프로젝트는 MIT 라이선스를 따릅니다.
@@ -57,4 +73,4 @@ print(f"시주: {saju['hour']['ganji']} ({saju['hour']['hganji']})")
 
 ## 기여
 
-이슈나 풀 리퀘스트는 GitHub를 통해 제출해주세요: https://github.com/hwankhai/mansae_api 
+이슈나 풀 리퀘스트는 GitHub를 통해 제출해주세요: https://github.com/hwankhai/mansae-api 
